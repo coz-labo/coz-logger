@@ -8,8 +8,8 @@
 
 
 var CozLogger = require('./coz_logger');
-function cozLogger(){
-    return new CozLogger({});
+function cozLogger(verbose){
+    return new CozLogger(verbose);
 }
 
 cozLogger.CozLogger = CozLogger;
