@@ -33,9 +33,13 @@ Logger for coz.
 
 
 
+
 <!-- Sections Start -->
 <a name="sections"></a>
 
+<!-- Section from "docs/readme/01.Installation.md.hbs" Start -->
+
+<a name="section-docs-readme-01-installation-md"></a>
 Installation
 -----
 
@@ -43,6 +47,11 @@ Installation
 npm install coz-logger --save
 ```
 
+<!-- Section from "docs/readme/01.Installation.md.hbs" End -->
+
+<!-- Section from "docs/readme/02.Usage.md.hbs" Start -->
+
+<a name="section-docs-readme-02-usage-md"></a>
 Usage
 ----
 
@@ -57,6 +66,8 @@ logger.infoStarted('render');
 var endDate = new Date();
 logger.infoFinished('render', startDate, endDate);
 ```
+<!-- Section from "docs/readme/02.Usage.md.hbs" End -->
+
 
 <!-- Sections Start -->
 
