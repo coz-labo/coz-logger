@@ -1,6 +1,8 @@
 var cozLogger = require('coz-logger');
 
-var logger = cozLogger({});
+var logger = cozLogger({
+    verbose: true
+});
 
 var startDate = new Date();
 logger.infoStarted('render');

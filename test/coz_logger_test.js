@@ -12,15 +12,11 @@ exports.setUp = function (done) {
 exports.tearDown = function (done) {
     done();
 };
-exports.setUp = function (done) {
-    done();
-};
-exports.tearDown = function (done) {
-    done()
-};
 
 exports['Log rendering.'] = function (test) {
-    var logger = new CozLogger(true);
+    var logger = new CozLogger({
+        verbose: true
+    });
     test.ok(logger);
     logger.logRendering({
         at: new Date(),

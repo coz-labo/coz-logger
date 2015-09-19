@@ -20,6 +20,7 @@ coz-logger
 [bd_gemnasium_shield_url]: https://gemnasium.com/coz-repo/coz-logger.svg
 [bd_npm_url]: http://www.npmjs.org/package/coz-logger
 [bd_npm_shield_url]: http://img.shields.io/npm/v/coz-logger.svg?style=flat
+[bd_bower_badge_url]: https://img.shields.io/bower/v/coz-logger.svg?style=flat
 
 <!-- Badge End -->
 
@@ -37,9 +38,9 @@ Logger for coz.
 <!-- Sections Start -->
 <a name="sections"></a>
 
-<!-- Section from "docs/readme/01.Installation.md.hbs" Start -->
+<!-- Section from "doc/readme/01.Installation.md.hbs" Start -->
 
-<a name="section-docs-readme-01-installation-md"></a>
+<a name="section-doc-readme-01-installation-md"></a>
 Installation
 -----
 
@@ -47,18 +48,20 @@ Installation
 npm install coz-logger --save
 ```
 
-<!-- Section from "docs/readme/01.Installation.md.hbs" End -->
+<!-- Section from "doc/readme/01.Installation.md.hbs" End -->
 
-<!-- Section from "docs/readme/02.Usage.md.hbs" Start -->
+<!-- Section from "doc/readme/02.Usage.md.hbs" Start -->
 
-<a name="section-docs-readme-02-usage-md"></a>
+<a name="section-doc-readme-02-usage-md"></a>
 Usage
 ----
 
 ```javascript
 var cozLogger = require('coz-logger');
 
-var logger = cozLogger({});
+var logger = cozLogger({
+    verbose: true
+});
 
 var startDate = new Date();
 logger.infoStarted('render');
@@ -66,7 +69,7 @@ logger.infoStarted('render');
 var endDate = new Date();
 logger.infoFinished('render', startDate, endDate);
 ```
-<!-- Section from "docs/readme/02.Usage.md.hbs" End -->
+<!-- Section from "doc/readme/02.Usage.md.hbs" End -->
 
 
 <!-- Sections Start -->

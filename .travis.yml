@@ -5,10 +5,10 @@ before_install:
 install:
 - npm install
 script:
-- npm run build
-- npm run test
-- npm run cover
-- npm run report
+- ./ci/build.js
+- ./ci/test.js
+- ./ci/cover.js
+- ./ci/report.js
 
 
 
