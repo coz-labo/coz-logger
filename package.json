@@ -1,6 +1,6 @@
 {
   "name": "coz-logger",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Logger for coz.",
   "main": "lib",
   "scripts": {
