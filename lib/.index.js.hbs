@@ -7,11 +7,11 @@
 "use strict";
 
 
-var pkg = require('../package.json'),
+const pkg = require('../package.json'),
     CozLogger = require('./coz_logger'),
     create = require('./create');
 
-var lib = create.bind(this);
+const lib = create.bind(this);
 lib.create = create;
 lib.CozLogger = CozLogger;
 lib.version = pkg.version;

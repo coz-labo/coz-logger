@@ -1,11 +1,13 @@
-var cozLogger = require('coz-logger');
+"use strict";
 
-var logger = cozLogger({
+const cozLogger = require('coz-logger');
+
+let logger = cozLogger({
     verbose: true
 });
 
-var startDate = new Date();
+let startDate = new Date();
 logger.infoStarted('render');
 /*...*/
-var endDate = new Date();
+let endDate = new Date();
 logger.infoFinished('render', startDate, endDate);
