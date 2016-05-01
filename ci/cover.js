@@ -4,22 +4,18 @@
  * Run coverage.
  */
 
-"use strict";
+'use strict'
 
-const path = require('path'),
-    expandglob = require('expandglob'),
-    apeTasking = require('ape-tasking'),
-    apeCovering = require('ape-covering');
+const expandglob = require('expandglob')
+const apeTasking = require('ape-tasking')
+const apeCovering = require('ape-covering')
 
-var basedir = path.resolve(__dirname, '..');
-process.chdir(basedir);
+process.chdir(`${__dirname}/..`)
 
 apeTasking.runTasks('cover', [
-    function (callback) {
-        apeCovering.measureCoverage(
-            'nodeunit', expandglob.sync('test/*_test.js'), {
-                dir: 'coverage'
-            }, callback
-        );
+  () => apeCovering.measureCoverage(
+    'nodeunit', expandglob.sync('test/*_test.js'), {
+      dir: 'coverage'
     }
-], true);
+  )
+], true)
