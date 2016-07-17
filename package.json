@@ -33,12 +33,11 @@
     "ape-tmpl": "^5.0.13",
     "ape-updating": "^4.0.4",
     "coz": "^6.0.6",
-    "coz-tmpl": "^1.2.1",
-    "expandglob": "^3.0.3",
     "injectmock": "^2.0.0",
     "mkdirp": "^0.5.1"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6",
+    "npm": ">=3"
   }
 }

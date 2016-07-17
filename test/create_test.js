@@ -1,24 +1,18 @@
 /**
  * Test case for create.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var create = require('../lib/create.js')
+const create = require('../lib/create.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-    done()
-};
-
-exports.tearDown = function (done) {
-    done()
-};
-
-exports['Create'] = function (test) {
-    var logger = create({
-        verbose: true
-    })
-    test.ok(logger)
-    test.ok(logger.verbose)
-    test.done()
-};
+it('Create', (done) => {
+  let logger = create({
+    verbose: true
+  })
+  assert.ok(logger)
+  assert.ok(logger.verbose)
+  done()
+})
 

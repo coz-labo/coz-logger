@@ -3,7 +3,7 @@
 const cozLogger = require('coz-logger');
 
 let logger = cozLogger({
-    verbose: true
+  verbose: true
 });
 
 let startDate = new Date();

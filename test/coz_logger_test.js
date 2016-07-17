@@ -1,31 +1,21 @@
 /**
  * Test case for cozLogger.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 'use strict'
 
 const CozLogger = require('../lib/coz_logger.js')
+const assert = require('assert')
 
-exports.setUp = function (done) {
-  done()
-};
-
-exports.tearDown = function (done) {
-  done()
-};
-
-exports[ 'Log rendering.' ] = function (test) {
-  var logger = new CozLogger({
+it('Log rendering.', (done) => {
+  let logger = new CozLogger({
     verbose: true
   })
-  test.ok(logger)
   logger.logRendering({
     at: new Date(),
     path: __filename
-  }, function (err) {
-    test.ifError(err)
-    test.done()
   })
-};
+  done()
+})
 
 

@@ -1,13 +1,14 @@
 /**
  * Test for index.js
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 'use strict'
 
-var index = require('../lib/index.js')
+const index = require('../lib/index.js')
+const assert = require('assert')
 
-exports['Create logger.'] = function (test) {
-    var logger = index()
-    test.ok(logger)
-    test.done()
-};
+it('Create logger.', (done) => {
+  let logger = index()
+  assert.ok(logger)
+  done()
+})
