@@ -1,6 +1,6 @@
 {
   "name": "coz-logger",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Logger for coz.",
   "main": "shim/node",
   "scripts": {
@@ -22,17 +22,17 @@
   },
   "homepage": "https://github.com/coz-labo/coz-logger#readme",
   "dependencies": {
-    "argx": "^3.0.0",
+    "argx": "^4.0.0",
     "colorprint": "^4.0.9"
   },
   "devDependencies": {
     "ababel": "^5.0.9",
-    "amocha": "*",
-    "ape-releasing": "*",
+    "amocha": "^5.0.1",
+    "ape-releasing": "^5.0.1",
     "ape-tasking": "^4.0.7",
-    "ape-tmpl": "*",
-    "ape-updating": "*",
-    "coz": "*",
+    "ape-tmpl": "^6.0.12",
+    "ape-updating": "^5.0.1",
+    "coz": "^7.0.8",
     "injectmock": "^2.0.0",
     "mkdirp": "^0.5.1"
   },
